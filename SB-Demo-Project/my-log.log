@@ -1,0 +1,81 @@
+2025-06-02T21:19:42.236+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] com.example.SbDemProjectApplication      : Starting SbDemProjectApplication using Java 21.0.6 with PID 23240 (C:\Users\2414283\Documents\workspace-spring-tool-suite-4-4.29.1.RELEASE\SB-Demo-Project\target\classes started by 2414283 in C:\Users\2414283\Documents\workspace-spring-tool-suite-4-4.29.1.RELEASE\SB-Demo-Project)
+2025-06-02T21:19:42.242+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] com.example.SbDemProjectApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-06-02T21:19:42.281+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-02T21:19:42.281+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-02T21:19:43.282+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1234 (http)
+2025-06-02T21:19:43.302+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-02T21:19:43.302+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-02T21:19:43.354+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-02T21:19:43.354+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1072 ms
+2025-06-02T21:19:43.781+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-02T21:19:43.829+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-02T21:19:43.872+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 1234 (http) with context path '/'
+2025-06-02T21:19:43.886+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] com.example.SbDemProjectApplication      : Started SbDemProjectApplication in 2.266 seconds (process running for 2.981)
+2025-06-02T21:20:25.040+05:30  INFO 23240 --- [SB-Dem-Project] [http-nio-1234-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-02T21:20:25.040+05:30  INFO 23240 --- [SB-Dem-Project] [http-nio-1234-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-02T21:20:25.043+05:30  INFO 23240 --- [SB-Dem-Project] [http-nio-1234-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-02T21:21:02.871+05:30  INFO 23240 --- [SB-Dem-Project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-02T21:21:02.879+05:30  INFO 23240 --- [SB-Dem-Project] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-02T21:21:02.900+05:30  INFO 23240 --- [SB-Dem-Project] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-02T21:21:03.016+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] com.example.SbDemProjectApplication      : Starting SbDemProjectApplication using Java 21.0.6 with PID 23240 (C:\Users\2414283\Documents\workspace-spring-tool-suite-4-4.29.1.RELEASE\SB-Demo-Project\target\classes started by 2414283 in C:\Users\2414283\Documents\workspace-spring-tool-suite-4-4.29.1.RELEASE\SB-Demo-Project)
+2025-06-02T21:21:03.016+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] com.example.SbDemProjectApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-06-02T21:21:03.338+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1234 (http)
+2025-06-02T21:21:03.342+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-02T21:21:03.343+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-02T21:21:03.395+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-02T21:21:03.395+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 376 ms
+2025-06-02T21:21:03.544+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-02T21:21:03.554+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-02T21:21:03.571+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 1234 (http) with context path '/'
+2025-06-02T21:21:03.582+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] com.example.SbDemProjectApplication      : Started SbDemProjectApplication in 0.616 seconds (process running for 82.678)
+2025-06-02T21:21:03.586+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-02T21:21:04.127+05:30  INFO 23240 --- [SB-Dem-Project] [http-nio-1234-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-02T21:21:04.127+05:30  INFO 23240 --- [SB-Dem-Project] [http-nio-1234-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-02T21:21:04.128+05:30  INFO 23240 --- [SB-Dem-Project] [http-nio-1234-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-02T21:21:17.230+05:30  INFO 23240 --- [SB-Dem-Project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-02T21:21:17.232+05:30  INFO 23240 --- [SB-Dem-Project] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-02T21:21:17.238+05:30  INFO 23240 --- [SB-Dem-Project] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-02T21:21:17.296+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] com.example.SbDemProjectApplication      : Starting SbDemProjectApplication using Java 21.0.6 with PID 23240 (C:\Users\2414283\Documents\workspace-spring-tool-suite-4-4.29.1.RELEASE\SB-Demo-Project\target\classes started by 2414283 in C:\Users\2414283\Documents\workspace-spring-tool-suite-4-4.29.1.RELEASE\SB-Demo-Project)
+2025-06-02T21:21:17.296+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] com.example.SbDemProjectApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-06-02T21:21:17.396+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1234 (http)
+2025-06-02T21:21:17.397+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-02T21:21:17.397+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-02T21:21:17.410+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-02T21:21:17.411+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 113 ms
+2025-06-02T21:21:17.451+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-02T21:21:17.455+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-02T21:21:17.462+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 1234 (http) with context path '/'
+2025-06-02T21:21:17.469+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] com.example.SbDemProjectApplication      : Started SbDemProjectApplication in 0.191 seconds (process running for 96.565)
+2025-06-02T21:21:17.470+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-02T21:21:30.379+05:30  INFO 23240 --- [SB-Dem-Project] [http-nio-1234-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-02T21:21:30.380+05:30  INFO 23240 --- [SB-Dem-Project] [http-nio-1234-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-02T21:21:30.380+05:30  INFO 23240 --- [SB-Dem-Project] [http-nio-1234-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-02T21:21:30.398+05:30  INFO 23240 --- [SB-Dem-Project] [http-nio-1234-exec-2] com.example.controller.MyController      : User accessing SayHello() method
+2025-06-02T21:21:30.398+05:30  WARN 23240 --- [SB-Dem-Project] [http-nio-1234-exec-2] com.example.controller.MyController      : Test Warning: 
+2025-06-02T21:21:30.398+05:30 ERROR 23240 --- [SB-Dem-Project] [http-nio-1234-exec-2] com.example.controller.MyController      : Arithmetic Exception Raised
+2025-06-02T21:21:49.039+05:30  WARN 23240 --- [SB-Dem-Project] [http-nio-1234-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-06-02T21:25:01.188+05:30  INFO 23240 --- [SB-Dem-Project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-02T21:25:01.189+05:30  INFO 23240 --- [SB-Dem-Project] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-02T21:25:01.192+05:30  INFO 23240 --- [SB-Dem-Project] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-02T21:25:01.238+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] com.example.SbDemProjectApplication      : Starting SbDemProjectApplication using Java 21.0.6 with PID 23240 (C:\Users\2414283\Documents\workspace-spring-tool-suite-4-4.29.1.RELEASE\SB-Demo-Project\target\classes started by 2414283 in C:\Users\2414283\Documents\workspace-spring-tool-suite-4-4.29.1.RELEASE\SB-Demo-Project)
+2025-06-02T21:25:01.239+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] com.example.SbDemProjectApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-06-02T21:25:01.375+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1234 (http)
+2025-06-02T21:25:01.376+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-02T21:25:01.376+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-02T21:25:01.401+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-02T21:25:01.401+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 160 ms
+2025-06-02T21:25:01.461+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-02T21:25:01.466+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-02T21:25:01.473+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 1234 (http) with context path '/'
+2025-06-02T21:25:01.476+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] com.example.SbDemProjectApplication      : Started SbDemProjectApplication in 0.255 seconds (process running for 320.571)
+2025-06-02T21:25:01.477+05:30  INFO 23240 --- [SB-Dem-Project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-02T21:25:04.559+05:30  INFO 23240 --- [SB-Dem-Project] [http-nio-1234-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-02T21:25:04.559+05:30  INFO 23240 --- [SB-Dem-Project] [http-nio-1234-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-02T21:25:04.559+05:30  INFO 23240 --- [SB-Dem-Project] [http-nio-1234-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-02T21:25:04.560+05:30  WARN 23240 --- [SB-Dem-Project] [http-nio-1234-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-06-02T21:25:22.457+05:30  WARN 23240 --- [SB-Dem-Project] [http-nio-1234-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-06-02T21:26:02.186+05:30  WARN 23240 --- [SB-Dem-Project] [http-nio-1234-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-06-02T21:26:14.845+05:30  WARN 23240 --- [SB-Dem-Project] [http-nio-1234-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-06-02T22:44:42.042+05:30  INFO 23240 --- [SB-Dem-Project] [RMI TCP Connection(116)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-02T22:44:42.135+05:30  INFO 23240 --- [SB-Dem-Project] [RMI TCP Connection(116)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-02T22:44:42.155+05:30  INFO 23240 --- [SB-Dem-Project] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

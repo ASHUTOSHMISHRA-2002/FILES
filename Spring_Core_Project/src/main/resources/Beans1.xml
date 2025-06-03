@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Example for Setter Injection Without using @Autowired-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="address" class="com.cts.bean.Address">
+		<property name="city" value="Bargarh"></property>
+		<property name="state" value="Odisha"></property>
+	</bean>
+	<bean id="employee" class="com.cts.bean.Employee">
+		<property name="id" value="101"></property>
+		<property name="name" value="Ashu"></property>
+		<property name="salary" value="2000"></property>
+		<property name="address">
+			<ref bean="address" />
+		</property>
+	</bean>
+	<bean id="address1" class="com.cts.bean.Address">
+		<property name="city" value="Sambalpur"></property>
+		<property name="state" value="Odisha"></property>
+	</bean>
+	<bean id="employee1" class="com.cts.bean.Employee">
+		<property name="id" value="102"></property>
+		<property name="name" value="Sphinx"></property>
+		<property name="salary" value="5000"></property>
+		<property name="address">
+			<ref bean="address1" />
+		</property>
+	</bean>
+
+</beans>

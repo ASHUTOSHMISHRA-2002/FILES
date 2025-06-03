@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- Own class -->
+	<bean id="employeeDAO"
+		class="com.cts.spring.jdbc.dao.EmployeeDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+<!-- Predefined class -->
+<!-- Establishing Connection-->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+
+		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/ashutosh" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+	</bean>
+
+</beans>
