@@ -1,0 +1,430 @@
+package DAY_12;
+
+public class QuickSort {
+    public static void quicksort(int[] a, int low, int high) {
+        if (low<high){
+            int pi=partition(a,low,high);
+            quicksort(a,low,pi-1);
+            quicksort(a,pi+1,high);
+        }
+    }
+
+    public static int partition(int[] a, int low, int high) {
+        int pivot=a[high];
+        int i=low-1;
+        for (int j=low;j<high;j++){
+            if (a[j]<pivot){
+                i++;
+                int temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+        int temp=a[i+1];
+        a[i+1]=a[high];
+        a[high]=temp;
+        return i+1;
+    }
+    public static void display(int[]a){
+        System.out.println("sorted");
+        for (int e:a){
+            System.out.println(e);
+        }
+    }
+    public static void main(String[] args) {
+        int []a={14,85,1,36,6};
+        quicksort(a,0,a.length-1);
+        display(a);
+    }
+}
+
+
+
+package DAY_12;
+
+
+import java.util.Scanner;
+
+public class MergeSort {
+    public static void mergesort(int arr[],int left,int right) {
+        if (left < right) {
+            int mid = left + (right - left) / 2;
+            mergesort(arr, left, mid);
+            mergesort(arr, mid + 1, right);
+            merge(arr, left, mid, right);
+        }
+    }
+    public static void merge(int[] arr, int left, int mid, int right) {
+        int n1=mid-left+1;
+        int n2=right-mid;
+
+        int []L=new int[n1];
+        int []R=new int[n2];
+
+        for (int i=0;i<n1;i++){
+            L[i]=arr[left+i];
+        }
+        for (int j=0;j<n2;j++){
+            R[j]=arr[mid+1+j];
+        }
+        int i=0;
+        int j=0;
+        int k=left;
+        while (i<n1 && j<n2){
+            if (L[i]<R[j]){
+                arr[k]=L[i];
+                i++;
+                k++;
+            }
+            else {
+                arr[k]=R[j];
+                j++;
+                k++;
+            }
+        }
+        while (i<n1){
+            arr[k]=L[i];
+            i++;
+            k++;
+        }
+        while (j<n2){
+            arr[k]=R[j];
+            j++;
+            k++;
+        }
+    }
+    public static void display(int[]arr){
+        System.out.println("Sorted Array:");
+        for (int a:arr){
+            System.out.println(a);
+        }
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter The Size:");
+        int size=sc.nextInt();
+        int a[]=new int[size];
+        System.out.println("Enter Array Elements:");
+        for (int i=0;i<a.length;i++){
+            a[i]=sc.nextInt();
+        }
+        mergesort(a,0,a.length-1);
+        display(a);
+
+    }
+}
+
+package DAY_14.New;
+
+public class Singly_LinkedList {
+    private Node head;
+    public void insertBegin(int data){
+        Node newNode=new Node(data);
+        newNode.next=head;
+        head=newNode;
+    }
+    public void insertEnd(int data){
+        Node newNode=new Node(data);
+        if (head==null){
+            head=newNode;
+            return;
+        }
+        Node temp=head;
+        while (temp.next!=null){
+            temp=temp.next;
+        }
+        temp.next=newNode;
+    }
+    public void delete(int key){
+        if (head==null){
+            System.out.println("List is Empty");
+            return;
+        }
+        if (head.data==key){
+            head=head.next;
+            System.out.println("Deleted Key: "+key);
+            return;
+        }
+        Node temp=head;
+        while (temp.next!=null){
+            if (temp.next.data==key){
+                temp.next=temp.next.next;
+                System.out.println("Deleted Key: "+key);
+                return;
+            }
+            temp=temp.next;
+        }
+        System.out.println("Key Either already deleted or not present in the List: "+key);
+    }
+    public void display(){
+        if (head==null){
+            System.out.println("List is Empty");
+            return;
+        }
+        Node temp=head;
+        while (temp!=null){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        Singly_LinkedList sl=new Singly_LinkedList();
+        sl.insertBegin(100);
+        sl.insertBegin(85);
+        sl.insertEnd(26);
+        sl.insertEnd(300);
+        sl.display();
+        sl.delete(100);
+        sl.display();
+        sl.delete(856);
+        sl.display();
+        sl.delete(300);
+        sl.display();
+        sl.delete(85);
+        sl.display();
+        sl.delete(26);
+        sl.display();
+    }
+}
+
+
+package DAY_14.New;
+
+import java.awt.image.Kernel;
+
+public class Doubly_LinkedList {
+    private Node head;
+    public void insertBegin(int data){
+        Node newNode=new Node(data);
+        newNode.next=head;
+        newNode.prev=null;
+        if (head!=null){
+            head.prev=newNode;
+        }
+        head=newNode;
+    }
+    public void insertEnd(int data){
+        Node newNode=new Node(data);
+        if (head==null){
+            head=newNode;
+            return;
+        }
+        Node temp=head;
+        while (temp.next!=null){
+            temp=temp.next;
+        }
+        temp.next=newNode;
+        newNode.prev=temp;
+    }
+    public void delete(int key){
+        if (head==null){
+            return;
+        }
+        if (head.data==key){
+            head=head.next;
+            if (head!=null){
+                head.prev=null;
+            }
+            System.out.println("Deleted Key: "+key);
+            return;
+        }
+        Node temp=head;
+        while (temp!=null){
+            if (temp.data==key){
+                if (temp.next!=null){
+                    temp.next.prev=temp.prev;
+                }
+                if (temp.prev!=null){
+                    temp.prev.next=temp.next;
+                }
+                System.out.println("Deleted key: "+key);
+                return;
+            }
+            temp=temp.next;
+        }
+        System.out.println("Key is not found in the List: "+key);
+    }
+    public void displayForward(){
+        if (head==null){
+            System.out.println("List is Empty");
+            return;
+        }
+        Node temp=head;
+        while (temp!=null){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+        System.out.println();
+    }
+    public void displayBackward(){
+        if (head==null){
+            System.out.println("List is Empty");
+            return;
+        }
+        Node temp=head;
+        while (temp.next!=null){
+            temp=temp.next;
+        }
+        while (temp!=null){
+            System.out.print(temp.data+" ");
+            temp=temp.prev;
+        }
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        Doubly_LinkedList dl=new Doubly_LinkedList();
+        dl.insertBegin(78);
+        dl.insertBegin(75);
+        dl.insertEnd(25);
+        dl.insertEnd(31);
+        dl.displayForward();
+        dl.displayBackward();
+        dl.delete(78);
+        dl.displayBackward();
+        dl.displayBackward();
+        dl.delete(78);
+        dl.displayBackward();
+        dl.displayBackward();
+        dl.delete(31);
+        dl.displayBackward();
+        dl.displayBackward();
+        dl.delete(75);
+        dl.displayForward();
+        dl.displayBackward();
+    }
+}
+
+
+package DAY_14.New;
+
+public class Hashset {
+    Node []arr=new Node[16];
+    int count=0;
+    public boolean add(int data){
+        int index=data%arr.length;
+        if (arr[index]==null){
+            arr[index]=new Node(data);
+            count++;
+            return true;
+        }
+        Node curr=arr[index];
+        Node prev=null;
+        while (curr!=null){
+            if (curr.data==data){
+                return false;
+            }
+            curr=prev;
+            prev=curr.next;
+        }
+        prev.next=new Node(data);
+        count++;
+        return true;
+    }
+    public void display(){
+        for (Node node:arr){
+            while (node!=null){
+                System.out.println(node.data);
+                node=node.next;
+            }
+        }
+        System.out.println();
+    }
+    public int size(){
+        System.out.println(count);
+        return count;
+    }
+    public static void main(String[] args){
+        Hashset hs=new Hashset();
+        hs.add(700);
+        hs.add(45);
+        hs.add(68);
+        hs.add(50);
+        hs.display();
+        hs.size();
+    }
+}
+
+
+package DAY_14.New;
+
+public class Node {
+    int data;
+    int key;
+    Node next;
+    Node prev;
+    Node(int data){
+        this.data=data;
+        this.next=null;
+        this.prev=null;
+    }
+}
+
+
+package DAY_14.New;
+
+import DAY_14.Queue_Impl;
+
+public class Queue_impl {
+    private Node rear,front;
+    public void enqueue(int data){
+        Node newNode=new Node(data);
+        if (rear==null){
+            front=newNode;//in first case when front is empty element will insert in front
+            rear=newNode;
+        }
+        else{// insert elements in middle
+            rear.next=newNode;//when rear!=null then element will insert at rear.next and rear end
+            rear=newNode;
+        }
+    }
+    public int dequeue(){
+        if (front==null){
+            System.out.println("Queue is empty");
+            return -1;
+        }
+        int deleteData=front.data;//element will delete from the front end only.
+        front=front.next;
+        System.out.println("Deleted element: "+deleteData);
+        return deleteData;
+    }
+    public int peek(){
+        System.out.println("Topmost element:"+front.data);
+        return front.data;
+    }
+    public boolean isEmpty(){
+        System.out.println(front==null);
+        return front==null;
+    }
+    public void display(){
+        if (front==null){
+            System.out.print("Queue is empty");
+            return;
+        }
+        Node temp=front;
+        System.out.println("Queue:");
+        while (temp!=null){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        Queue_impl ql=new Queue_impl();
+        ql.enqueue(70);
+        ql.enqueue(60);
+        ql.enqueue(80);
+        ql.enqueue(45);
+        ql.display();
+        ql.dequeue();
+        ql.display();
+        ql.peek();
+        ql.dequeue();
+        ql.display();
+        ql.dequeue();
+        ql.display();
+        ql.dequeue();
+        ql.display();
+    }
+}
